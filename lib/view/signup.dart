@@ -32,7 +32,6 @@ class SignupView extends StatelessWidget {
                       height:110,
                     ),     const SizedBox(height: 5),
 
-
                     // Signup Text
                     Text(
                       "Sign up to artionet",
