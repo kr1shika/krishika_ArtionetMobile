@@ -26,12 +26,13 @@ class SignupView extends StatelessWidget {
                   children: [
                     // Logo
                      const SizedBox(height: 130),
-
                     Image.asset(
                       'assets/images/logo.png',
-                      width: 97,
-                      height: 97,
-                    ),
+                      width:110,
+                      height:110,
+                    ),     const SizedBox(height: 5),
+
+
                     // Signup Text
                     Text(
                       "Sign up to artionet",
