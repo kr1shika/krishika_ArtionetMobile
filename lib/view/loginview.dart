@@ -25,10 +25,19 @@ class LoginView extends StatelessWidget {
 
                     // Login Text
                     Text(
-                      "Login Abroad",
+                      "Login to Artionet",
                       style: const TextStyle(
                         fontFamily: 'IM_Fell_DW_Pica_SC',
                         fontSize: 33,
+
+                        color: Colors.black, // Ensure text color contrasts with the background
+                      ),
+                    ),
+                    Text(
+                      "welcome back",
+                      style: const TextStyle(
+                        fontFamily: 'IM_Fell_DW_Pica_SC',
+                        fontSize: 22,
 
                         color: Colors.black, // Ensure text color contrasts with the background
                       ),
@@ -81,7 +90,8 @@ class LoginView extends StatelessWidget {
                     const SizedBox(height: 32),
                     ElevatedButton(
                       onPressed: () {
-                        // Navigate to Signup
+                      Navigator.pushNamed(context, '/home'); 
+
                       },
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(
@@ -92,7 +102,7 @@ class LoginView extends StatelessWidget {
                         foregroundColor: const Color(0xFFFFFFF7),
                         // textStyle: const TextStyle( fontFamily:'IM_Fell_DW_Pica_SC',),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8), // Decrease box radius
+                          borderRadius: BorderRadius.circular(8), 
                         ),
                       ),
                       child: const Text(

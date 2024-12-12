@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tryproject/view/homeview.dart';
 import 'package:tryproject/view/loginview.dart';
 import 'package:tryproject/view/onboard.dart';
 import 'package:tryproject/view/signupview.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         '/onboard': (context) => Onboard(),
         '/login': (context) => LoginView(),
         '/signup': (context) => SignupView(),
+        '/home': (context)=> HomeView()
       },
     );
   }

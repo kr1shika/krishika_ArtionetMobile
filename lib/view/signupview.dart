@@ -11,15 +11,6 @@ class SignupView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Stack(
             children: [
-              // Background Image
-              // Padding(
-              //   padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-              //   child: Image.asset(
-              //     'assets/images/background.png',
-              //     fit:BoxFit.cover
-              //   ),
-              // ),
-              // Foreground content
               Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
