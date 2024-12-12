@@ -9,6 +9,14 @@ class SplashView extends StatefulWidget {
 
 class _SplashViewState extends State<SplashView> {
   @override
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 4510), () {
+      Navigator.pushReplacementNamed(context, '/onboard');
+    });
+  }
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFFFF7),
@@ -19,10 +27,9 @@ class _SplashViewState extends State<SplashView> {
           
           Center(
             child: Image.asset(
-                      'assets/images/splash1.gif',
-                      width:135,
+                      'assets/images/splash2.gif',
+                      width:130,
                       height:120,
-
                     ),  
                     
           ),

@@ -10,16 +10,6 @@ class Onboard extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            // Background Image
-            // Positioned.fill(
-            //   child: Image.asset(
-            //     'assets/images/background.png', 
-            //     // fit: BoxFit.cover,
-            //     width: 120,
-            //     height: 120,
-            //   ),
-            // ),
-            // Foreground Content
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -39,24 +29,24 @@ class Onboard extends StatelessWidget {
                       ),),
                     const SizedBox(height: 0),
                   Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 35.0), 
+                        padding: const EdgeInsets.symmetric(horizontal: 59.0), 
                         child: Text(
                           "Discover artworks, artist and ongoing exhibitions with Artionet.",
                           textAlign: TextAlign.center,
                           style: const TextStyle(
-                            fontFamily: 'IM_Fell_English_SC',
-                            fontSize: 22,
+                            fontFamily: 'IM_FELL_English_SC',
+                            fontSize: 20,
                             color: Colors.black, 
                           ),
                         ),
                       ),
                       Image.asset(
                     'assets/images/crescent.png', 
-                    width: 242,
+                    width: 254,
                     height: 115,
                   ), 
 
-                  const SizedBox(height: 5),
+                  const SizedBox(height: 8),
                   ElevatedButton(
                     onPressed: () {
                             Navigator.pushNamed(context, '/login'); 
