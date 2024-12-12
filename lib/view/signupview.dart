@@ -56,8 +56,8 @@ class SignupView extends StatelessWidget {
                           fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
                         ),
                         style: const TextStyle(
-                          fontFamily:'IM_FELL_Great_Primer',
-                          fontSize: 18,
+                          fontFamily:'IM_FELL_English_SC',
+                          fontSize: 19,
                           fontWeight: FontWeight.w600,
                           color: Color.fromARGB(255, 61, 57, 57),
                         ),
@@ -77,8 +77,8 @@ class SignupView extends StatelessWidget {
                           fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
                         ),
                         style: const TextStyle(
-                          fontFamily:'IM_FELL_Great_Primer',
-                          fontSize: 18,
+                          fontFamily:'IM_FELL_English_SC',
+                          fontSize: 19,
                           fontWeight: FontWeight.w600,
                           color: Color.fromARGB(255, 61, 57, 57),
                         ),
@@ -98,8 +98,8 @@ class SignupView extends StatelessWidget {
                           fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
                         ),
                         style: const TextStyle(
-                          fontFamily:'IM_FELL_Great_Primer',
-                          fontSize: 18,
+                          fontFamily:'IM_FELL_English_SC',
+                          fontSize: 19,
                           fontWeight: FontWeight.w600,
                           color: Color.fromARGB(255, 61, 57, 57),
                         ),
@@ -108,14 +108,14 @@ class SignupView extends StatelessWidget {
                     const SizedBox(height: 28),
                     ElevatedButton(
                       onPressed: () {
-                        // Navigate to Signup
-                      },
+                            Navigator.pushNamed(context, '/login'); 
+                          },
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 42,
                           vertical: 4,
                         ),
-                        backgroundColor: const Color.fromARGB(255, 55, 55, 56),
+                        backgroundColor: const Color.fromARGB(255, 27, 29, 30),
                         foregroundColor: const Color(0xFFFFFFF7),
                         // textStyle: const TextStyle( fontFamily:'IM_Fell_DW_Pica_SC',),
 
@@ -129,11 +129,10 @@ class SignupView extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 6),
-
                      ElevatedButton(
                       onPressed: () {
-                        print("Invisible button clicked!");
-                      },
+                            Navigator.pushNamed(context, '/login'); 
+                          },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         shadowColor: Colors.transparent,

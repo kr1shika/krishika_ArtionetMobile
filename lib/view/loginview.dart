@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Loginview extends StatelessWidget {
-  const Loginview({super.key});
+class LoginView extends StatelessWidget {
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class Loginview extends StatelessWidget {
                      const SizedBox(height: 130),
                     Image.asset(
                       'assets/images/logo.png',
-                      width:110,
-                      height:110,
+                      width:112,
+                      height:112,
                     ),     const SizedBox(height: 5),
 
                     // Login Text
@@ -29,6 +29,7 @@ class Loginview extends StatelessWidget {
                       style: const TextStyle(
                         fontFamily: 'IM_Fell_DW_Pica_SC',
                         fontSize: 33,
+
                         color: Colors.black, // Ensure text color contrasts with the background
                       ),
                     ),
@@ -38,8 +39,8 @@ class Loginview extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 41.0),
                       child: TextFormField(
                         decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
-                          hintText: "Email/Password",
+                          contentPadding: const EdgeInsets.symmetric(vertical: 11.0, horizontal: 12.0),
+                          hintText: "Email/Phone Number",
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8.0),
                           ),
@@ -47,35 +48,37 @@ class Loginview extends StatelessWidget {
                           fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
                         ),
                         style: const TextStyle(
-                          fontFamily:'IM_FELL_Great_Primer',
-                          fontSize: 18,
+                          fontFamily:'IM_FELL_English_SC',
+                          fontSize: 20,
                           fontWeight: FontWeight.w600,
                           color: Color.fromARGB(255, 61, 57, 57),
                         ),
                       ),
                     ),
-                    const SizedBox(height: 26),
+                    const SizedBox(height: 30),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 41.0),
                       child: TextFormField(
                         decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
+                          contentPadding: const EdgeInsets.symmetric(vertical: 11.0, horizontal: 12.0),
                           hintText: "Password",
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8.0),
+                            
                           ),
                           filled: true,
                           fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
                         ),
                         style: const TextStyle(
-                          fontFamily:'IM_FELL_Great_Primer',
-                          fontSize: 18,
+                          fontFamily:'IM_FELL_English_SC',
+                          fontSize: 20,
                           fontWeight: FontWeight.w600,
-                          color: Color.fromARGB(255, 61, 57, 57),
+                          color: const Color.fromARGB(255, 27, 29, 30),
+                          
                         ),
                       ),
                     ),
-                    const SizedBox(height: 28),
+                    const SizedBox(height: 32),
                     ElevatedButton(
                       onPressed: () {
                         // Navigate to Signup
@@ -85,10 +88,9 @@ class Loginview extends StatelessWidget {
                           horizontal: 42,
                           vertical: 4,
                         ),
-                        backgroundColor: const Color.fromARGB(255, 55, 55, 56),
+                        backgroundColor: const Color.fromARGB(255, 27, 29, 30),
                         foregroundColor: const Color(0xFFFFFFF7),
                         // textStyle: const TextStyle( fontFamily:'IM_Fell_DW_Pica_SC',),
-
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8), // Decrease box radius
                         ),
@@ -102,8 +104,8 @@ class Loginview extends StatelessWidget {
 
                      ElevatedButton(
                       onPressed: () {
-                        print("Invisible button clicked!");
-                      },
+                            Navigator.pushNamed(context, '/signup'); 
+                          },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         shadowColor: Colors.transparent,

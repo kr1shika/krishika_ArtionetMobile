@@ -59,8 +59,8 @@ class Onboard extends StatelessWidget {
                   const SizedBox(height: 5),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigate to Signup
-                    },
+                            Navigator.pushNamed(context, '/login'); 
+                          },
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 50,
@@ -80,8 +80,8 @@ class Onboard extends StatelessWidget {
                   const SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigate to Signup
-                    },
+                            Navigator.pushNamed(context, '/signup'); 
+                          },
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 43,
