@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
-class SignupView extends StatelessWidget {
-
-
-  const SignupView({super.key});
+class ArtistSignupView extends StatelessWidget {
+  const ArtistSignupView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: const Color(0xFFFFFFF7),
       body: SafeArea(
@@ -22,8 +19,8 @@ class SignupView extends StatelessWidget {
                      const SizedBox(height: 130),
                     Image.asset(
                       'assets/images/logo.png',
-                      width:120,
-                      height:120,
+                      width:110,
+                      height:110,
                     ),     const SizedBox(height: 5),
 
                     // Signup Text
@@ -68,7 +65,7 @@ class SignupView extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8), 
+                          fillColor: Colors.white.withOpacity(0.8),
                         ),
                         style: const TextStyle(
                           fontFamily:'IM_FELL_English_SC',
@@ -151,10 +148,7 @@ class SignupView extends StatelessWidget {
             ],
           ),
         ),
-      ), 
-      
-
+      ),
     );
   }
 }
-

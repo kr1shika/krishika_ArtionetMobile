@@ -20,7 +20,7 @@ class Onboard extends StatelessWidget {
                     width: 115,
                     height: 115,
                   ),              
-                  const SizedBox(height: 5
+                  const SizedBox(height: 2
                   ),
                   Text("Artionet", style: const TextStyle(
                         fontFamily: 'IM_Fell_DW_Pica_SC',
@@ -29,7 +29,7 @@ class Onboard extends StatelessWidget {
                       ),),
                     const SizedBox(height: 0),
                   Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 59.0), 
+                        padding: const EdgeInsets.symmetric(horizontal: 59.0 ), 
                         child: Text(
                           "Discover artworks, artist and ongoing exhibitions with Artionet.",
                           textAlign: TextAlign.center,
@@ -46,7 +46,7 @@ class Onboard extends StatelessWidget {
                     height: 115,
                   ), 
 
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 0),
                   ElevatedButton(
                     onPressed: () {
                             Navigator.pushNamed(context, '/login'); 
@@ -87,7 +87,26 @@ class Onboard extends StatelessWidget {
                       'Sign Up',
                       style: TextStyle(fontSize: 16), 
                     ),
-                  ),
+                  ), const SizedBox(height: 25,),
+
+                  Padding(padding: const EdgeInsets.symmetric(
+                        horizontal: 100,
+                        vertical: 15,
+                      ),
+                      child: Text(
+                        "Find out what Artionet offers artists.", 
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily:'IM_FELL_DW_Pica',
+                          color: Colors.black, 
+                          fontSize: 17,
+                          // fontWeight: FontWeight.bold,
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                      )
+
+                   
                 ],
               ),
             ),
