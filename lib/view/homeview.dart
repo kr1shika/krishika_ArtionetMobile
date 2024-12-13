@@ -310,10 +310,11 @@ class _HomeViewState extends State<HomeView> {
       backgroundColor: const Color(0xFFFFFFF7),
       appBar: AppBar(
         backgroundColor: const Color(0xFFFFFFF7),
-        centerTitle: true, // Ensures the title (logo) is centered
+        centerTitle: true, 
         title: Image.asset(
           'assets/images/logo.png',
-          height: 48,
+          height: 42,
+          
           fit: BoxFit.contain,
         ),
       ),
@@ -485,7 +486,7 @@ class _HomeViewState extends State<HomeView> {
                                   ),
                                   const SizedBox(height: 8),
                                   const Text(
-                                    '"Artwork 1", 2024',
+                                    '"Gotern Mortensen", 2024',
                                     style: TextStyle(
                                       fontSize: 12,
                                       fontStyle: FontStyle.italic,
@@ -541,10 +542,11 @@ class _HomeViewState extends State<HomeView> {
                                   ),
                                   const SizedBox(height: 8),
                                   const Text(
-                                    '"Artwork 1", 2024',
+                                    'COllection-NAC, 2024 []',
                                     style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 13,
                                       fontStyle: FontStyle.italic,
+                                      
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
@@ -563,36 +565,34 @@ class _HomeViewState extends State<HomeView> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color.fromARGB(255, 27, 29, 30),
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.save),
-            label: 'Search',
-          ),
+ backgroundColor: const Color(0xFFF7F7F7),  currentIndex: _selectedIndex,
+  onTap: _onItemTapped,
+  items: const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.search),
+      label: 'Search',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.save),
+      label: 'Save',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: 'Profile',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.notifications),
+      label: 'Notifications',
+    ),
+  ],
+  selectedItemColor: const Color.fromARGB(255, 133, 139, 144),
+  unselectedItemColor: const Color.fromARGB(255, 27, 29, 30),
+),
 
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Profile',
-          ),
-
-        ],
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
-      ),
     );
   }
 }
