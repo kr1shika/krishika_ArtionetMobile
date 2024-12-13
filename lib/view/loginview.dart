@@ -30,7 +30,7 @@ class LoginView extends StatelessWidget {
                         fontFamily: 'IM_Fell_DW_Pica_SC',
                         fontSize: 33,
 
-                        color: Colors.black, // Ensure text color contrasts with the background
+                        color: Colors.black, 
                       ),
                     ),
                     Text(
@@ -39,7 +39,7 @@ class LoginView extends StatelessWidget {
                         fontFamily: 'IM_Fell_DW_Pica_SC',
                         fontSize: 22,
 
-                        color: Colors.black, // Ensure text color contrasts with the background
+                        color: Colors.black, 
                       ),
                     ),
                     const SizedBox(height: 23),
@@ -54,7 +54,7 @@ class LoginView extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
+                          fillColor: Colors.white.withOpacity(0.8), 
                         ),
                         style: const TextStyle(
                           fontFamily:'IM_FELL_English_SC',
@@ -76,7 +76,7 @@ class LoginView extends StatelessWidget {
                             
                           ),
                           filled: true,
-                          fillColor: Colors.white.withOpacity(0.8), // Background for better contrast
+                          fillColor: Colors.white.withOpacity(0.8), 
                         ),
                         style: const TextStyle(
                           fontFamily:'IM_FELL_English_SC',
