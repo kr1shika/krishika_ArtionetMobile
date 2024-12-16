@@ -22,7 +22,6 @@ class ArtistSignupView extends StatelessWidget {
                       width:110,
                       height:110,
                     ),     const SizedBox(height: 5),
-
                     // Signup Text
                     Text(
                       "Sign up to artionet",
@@ -34,26 +33,56 @@ class ArtistSignupView extends StatelessWidget {
                     ),
                     const SizedBox(height: 21),
                     // Input Fields
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 41.0),
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
-                          hintText: "Phone Number",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8.0),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 41.0, right: 8.0), // Add spacing
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
+                                hintText: "First name",
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                                filled: true,
+                                fillColor: Colors.white.withOpacity(0.8),
+                              ),
+                              style: const TextStyle(
+                                fontFamily: 'IM_FELL_English_SC',
+                                fontSize: 19,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromARGB(255, 61, 57, 57),
+                              ),
+                            ),
                           ),
-                          filled: true,
-                          fillColor: Colors.white.withOpacity(0.8), 
                         ),
-                        style: const TextStyle(
-                          fontFamily:'IM_FELL_English_SC',
-                          fontSize: 19,
-                          fontWeight: FontWeight.w600,
-                          color: Color.fromARGB(255, 61, 57, 57),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 41.0, left: 8.0), // Add spacing
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
+                                hintText: "Last name",
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                                filled: true,
+                                fillColor: Colors.white.withOpacity(0.8),
+                              ),
+                              style: const TextStyle(
+                                fontFamily: 'IM_FELL_English_SC',
+                                fontSize: 19,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromARGB(255, 61, 57, 57),
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
+
+                    
                     const SizedBox(height: 24),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 41.0),
@@ -75,6 +104,29 @@ class ArtistSignupView extends StatelessWidget {
                         ),
                       ),
                     ),
+
+                    const SizedBox(height: 24),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 41.0),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                          contentPadding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
+                          hintText: "Identification card [file]",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          filled: true,
+                          fillColor: Colors.white.withOpacity(0.8),
+                        ),
+                        style: const TextStyle(
+                          fontFamily:'IM_FELL_English_SC',
+                          fontSize: 19,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromARGB(255, 61, 57, 57),
+                        ),
+                      ),
+                    ),
+                    
                     const SizedBox(height: 24),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 41.0),

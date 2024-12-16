@@ -8,13 +8,12 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
-  @override
-
+  
   @override
   void initState() {
     super.initState();
     Future.delayed(const Duration(milliseconds: 4510), () {
-      Navigator.pushReplacementNamed(context, '/onboard');
+      Navigator.pushReplacementNamed(context, '/OnboardFirst');
     });
   }
   Widget build(BuildContext context) {
@@ -30,8 +29,7 @@ class _SplashViewState extends State<SplashView> {
                       'assets/images/splash2.gif',
                       width:130,
                       height:120,
-                    ),  
-                    
+                    ),                     
           ),
            Padding(
                  padding: const EdgeInsets.symmetric(horizontal: 35.0), 

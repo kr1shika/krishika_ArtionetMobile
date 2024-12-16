@@ -89,24 +89,27 @@ class Onboard extends StatelessWidget {
                     ),
                   ), const SizedBox(height: 25,),
 
-                  Padding(padding: const EdgeInsets.symmetric(
-                        horizontal: 100,
-                        vertical: 15,
-                      ),
-                      child: Text(
-                        "Find out what Artionet offers artists.", 
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily:'IM_FELL_DW_Pica',
-                          color: Colors.black, 
-                          fontSize: 17,
-                          // fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
+                  GestureDetector(
+                        onTap: () { 
+                              Navigator.pushNamed(context, '/artistonboard'); 
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 100,
+                            vertical: 15,
+                          ),
+                          child: Text(
+                            "Find out what Artionet offers artists.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: 'IM_FELL_DW_Pica',
+                              color: Colors.black,
+                              fontSize: 17,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
                         ),
-                      ),
                       )
-
-                   
                 ],
               ),
             ),
