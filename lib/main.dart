@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tryproject/core/app_theme/app_theme.dart';
 import 'package:tryproject/view/artists_view/about_view.dart';
 import 'package:tryproject/view/artists_view/artist_signup.dart';
 import 'package:tryproject/view/homeview.dart';
@@ -8,24 +9,28 @@ import 'package:tryproject/view/signupview.dart';
 import 'package:tryproject/view/splashscreen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      // theme for app
+      theme: getApplicationTheme(),
+
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashView(),
-        '/login': (context) => LoginView(),
-        '/signup': (context) => SignupView(),
-        '/home': (context) => HomeView(),
-        '/artistonboard' : (context)=> OnboardingScreen_Artist(),
-        '/artistSignupView': (context)=> ArtistSignupView(),
-        '/OnboardFirst':(context)=> OnboardScreens()
-
+        '/login': (context) => const LoginView(),
+        '/signup': (context) => const SignupView(),
+        '/home': (context) => const HomeView(),
+        '/artistonboard': (context) => const OnboardingScreen_Artist(),
+        '/artistSignupView': (context) => const ArtistSignupView(),
+        '/OnboardFirst': (context) => const OnboardScreens()
       },
     );
   }
